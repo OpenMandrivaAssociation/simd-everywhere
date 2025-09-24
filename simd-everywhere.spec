@@ -1,3 +1,7 @@
+%if "%{_build_cpu}" == "aarch64"
+%global optflags %{optflags} -march=armv8+crc
+%endif
+
 Name:		simd-everywhere
 Version:	0.8.2
 Release:	1
